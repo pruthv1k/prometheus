@@ -32,12 +32,12 @@ WantedBy=multi-user.target
 
 -----> END of content
 
-4. Allow the port securely through firewall
+5. Allow the port securely through firewall
 ufw enable
 ufw allow 9100
 ufw reload
 
-5. Start, enable and check the status of the prometheus node exporter service
+6. Start, enable and check the status of the prometheus node exporter service
 sudo systemctl daemon-reload
 sudo systemctl start node_exporter
 sudo systemctl status node_exporter
